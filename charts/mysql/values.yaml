@@ -62,4 +62,4 @@ global:
   volumes:
     - name: empty-dir
       hostPath:
-         path: {}
+         path: /path/to/my/directory
