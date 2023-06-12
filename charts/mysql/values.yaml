@@ -43,7 +43,7 @@ global:
 
       volumeMounts:
       - name: tz-config
-        mountPath: /etc/localtime
+        mountPath: {}
       
 
   affinity:
