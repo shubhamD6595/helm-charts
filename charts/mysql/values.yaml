@@ -42,7 +42,7 @@ global:
           port: 3306
 
       volumeMounts:
-      - name: tz-config
+      - name: empty-dir
         mountPath: {}
       
 
@@ -60,6 +60,6 @@ global:
       - port: 3306
         targetPort: 3306
   volumes:
-    - name: tz-config
+    - name: empty-dir
       hostPath:
-         path: /usr/share/zoneinfo/Asia/Kolkata
+         path: /path/to/emptydir
