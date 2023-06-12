@@ -61,5 +61,4 @@ global:
         targetPort: 3306
   volumes:
     - name: empty-dir
-      hostPath:
-         path: {}
+      emptyDir: {}
