@@ -1,7 +1,7 @@
 {{- if eq .Values.externalConfig.enabled true }}
 ---
 apiVersion: v1
-kind: ConfigMap
+kind: secret-via-helm
 metadata:
   name: {{ .Release.Name }}-ext-config
   labels:
